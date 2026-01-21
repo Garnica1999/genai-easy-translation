@@ -8,7 +8,7 @@ app = Flask(__name__)
 # Configuración del Cliente
 # Nota: Si usas proxy a nivel de sistema, el SDK lo tomará automáticamente.
 api_key = "AIzaSyB34UwbdIxL-nKmPZoqegCU5SfEdxRUmo4"
-client = genai.Client(api_key=api_key)
+client = genai.Client()
 
 @app.route('/translate', methods=['get'])
 def translate():
